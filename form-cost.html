@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ut</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md">
+        <a class="navbar-brand" href="#">
+            <img src="assets/images/barlogo.png" alt="Logo" height="90" width="180">
+        </a>
+        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse"data-target="#main-navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-navigation">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header class="page-header header container-fluid">
+        <div class="overlay">
+            <div class="header-image">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" width="800" height="800">
+                </a>
+            </div>
+            <div class="description">
+                <div class="wrapper">
+                    <form action="#" method="post">
+                        <label><h5 style="color: #fff">Estimated Costs</h5></label></br>
+                        <input type="number" name="coursefee" placeholder="Corse Fee £0.00" required></br>
+                        <input type="number" name="accommodation" placeholder="Accommodation £0.00" required></br>
+                        <input type="number" name="subsistence" placeholder="Subsistence £0.00" required></br>
+                        <input type="number" name="airtravel" placeholder="Air/Boat Travel £0.00" required></br>
+                        <input type="number" name="railtravel" placeholder="Rail Travel £0.00" required></br>
+                        <input type="number" name="taxifare" placeholder="Coach/Taxi Fare £0.00" required></br>
+                        <label style="color: #fff"> Sundries (Please Specify)</label>
+                        <input type="text" name="sundriesspecift" placeholder="Specify" required>
+                        <input type="number" name="sundriescost" placeholder="Sundries £0.00" required></br>
+                        <label for="cost-select" style="color: #fff">Choose a cost code</label>
+                        <select name="costcode" id="cost-select" required>
+                            <option value="">Select a cost code</option>
+                            <option value="T1020">T1020</option>
+                            <option value="T1022">T1022</option>
+                            <option value="T1022.5">T1022.5</option>
+                            <option value="T1022.7">T1022.7</option>
+                        </select>
+                        <label for="nominal-select" style="color: #fff">Choose a Nominal code</label>
+                        <select name="nominalcode" id="nominal-select" required>
+                            <option value="">Select a nominal code</option>
+                            <option value="80100">80100</option>
+                            <option value="80200">80200</option>
+                            <option value="80300.5">80300.5</option>
+                        </select>
+                       </form>
+                       </div>   
+                       <div class="button-container">
+                        <a href="form-bank.html">
+                            <button class="button">Go Back</button>
+                            </a>
+                        
+                        <a href="success.html">
+                        <button class="button">Submit</button>
+                        </a>    
+                    </div>
+                    <h5 style="color: #fff">Notes:</h5>
+                        <p style="color: #fff">Subsistence - a maximum of £25.00 per day</p>
+                        <p style="color: #fff">Accommodation - a maximum of £120 per night</p>
+                        <p style="color: #fff">Nominal Code - select from 80100, 80200, 80300</p>
+                        <p style="color: #fff">Cost Code - select from T1020, T1022, T1022.5, T1022.7</p>
+        </div>
+    </header> 
+    <script src="jquery-3.7.1.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
